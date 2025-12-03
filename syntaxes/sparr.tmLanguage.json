@@ -1,0 +1,50 @@
+{
+    "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+    "name": "Sparr",
+    "patterns": [
+        { "include": "#comments" },
+        { "include": "#instructions" },
+        { "include": "#registers" },
+        { "include": "#numbers" },
+        { "include": "#strings" }
+    ],
+    "repository": {
+        "comments": {
+            "patterns": [
+                {
+                    "name": "comment.line.number-sign.sparr",
+                    "match": "#.*$"
+                }
+            ]
+        },
+        "instructions": {
+            "patterns": [
+                {
+                    "name": "keyword.control.sparr",
+                    "match": "\\b(swap|set|push|pop|cpgt|cplt|cpeq|cp|add|sub|mul|div|mod|wrt|wrts|wrtc|wrtsc)\\b"
+                }
+            ]
+        },
+        "registers": {
+            "patterns": [
+                {
+                    "name": "variable.other.register.sparr",
+                    "match": "\\b(r[0-9]|rv|rc|rs)\\b"
+                }
+            ]
+        },
+        "numbers": {
+            "patterns": [
+                {
+                    "name": "constant.numeric.sparr",
+                    "match": "\\b-?\\d+\\b"
+                },
+                {
+                    "name": "constant.numeric.sparr",
+                    "match": "\\b.\\b"
+                }
+            ]
+        }
+    },
+    "scopeName": "source.sparr"
+}

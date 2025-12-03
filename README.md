@@ -1,2 +1,3 @@
-# sparr-language-extension
-A VSCode syntax highlighting plugin for Sparr
+# sparr-lang README
+
+A VSCode extension to add [Sparr](https://github.com/Slord6/Sparr) language highlighting.

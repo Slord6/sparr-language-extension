@@ -1,0 +1,25 @@
+{
+  "name": "sparr-lang",
+  "displayName": "Sparr Lang",
+  "description": "Syntax highlighting for Sparr files",
+  "version": "0.5.0",
+  "engines": {
+    "vscode": "^1.105.1"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "sparr",
+      "aliases": ["Sparr", "sparr"],
+      "extensions": [".sparr"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "sparr",
+      "scopeName": "source.sparr",
+      "path": "./syntaxes/sparr.tmLanguage.json"
+    }]
+  }
+}
