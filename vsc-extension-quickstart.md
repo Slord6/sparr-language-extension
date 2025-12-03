@@ -25,5 +25,6 @@
 
 ## Install your extension
 
+* To build a local copy of the extension install `vsce` - `npm install -g @vscode/vsce`, then run `vsce package`.
 * To start using your extension with Visual Studio Code copy it into the `<user home>/.vscode/extensions` folder and restart Code.
 * To share your extension with the world, read on https://code.visualstudio.com/api/working-with-extensions/publishing-extension about publishing an extension.

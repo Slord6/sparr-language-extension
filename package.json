@@ -21,5 +21,8 @@
       "scopeName": "source.sparr",
       "path": "./syntaxes/sparr.tmLanguage.json"
     }]
+  },
+  "repository": {
+    "url": "https://github.com/Slord6/sparr-language-extension"
   }
 }
